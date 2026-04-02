@@ -13,7 +13,7 @@ export function SearchInput({ value, onChange, isLoading, resultCount }: SearchI
     const inputRef = useRef<HTMLInputElement>(null)
 
     return (
-        <div className="relative w-full max-w-2xl">
+        <div className="relative w-full">
             <label
                 htmlFor="staff-search"
                 className="block text-sm font-medium text-gray-700 mb-1"
@@ -33,7 +33,7 @@ export function SearchInput({ value, onChange, isLoading, resultCount }: SearchI
                     value={value}
                     onChange={(e) => onChange(e.target.value)}
                     placeholder="Search by name, role or department..."
-                    className="w-full px-4 py-3 pr-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 pr-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
                 />
 
                 {isLoading && (

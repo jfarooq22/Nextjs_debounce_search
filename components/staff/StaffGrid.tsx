@@ -95,6 +95,38 @@ export function StaffGrid({
         )
     }
 
+    // // Empty search state - nothing typed yet
+    // if (searchTerm.length === 0) {
+    //     return (
+    //         <section aria-label="Staff search prompt">
+    //             <div className="flex flex-col items-center justify-center py-16 text-center">
+    //                 <div className="w-16 h-16 rounded-full bg-blue-50 flex items-center justify-center mb-4">
+    //                     <svg
+    //                         aria-hidden="true"
+    //                         className="w-8 h-8 text-blue-400"
+    //                         fill="none"
+    //                         stroke="currentColor"
+    //                         viewBox="0 0 24 24"
+    //                     >
+    //                         <path
+    //                             strokeLinecap="round"
+    //                             strokeLinejoin="round"
+    //                             strokeWidth={1.5}
+    //                             d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+    //                         />
+    //                     </svg>
+    //                 </div>
+    //                 <p className="text-lg font-medium text-gray-900">
+    //                     Search for staff members
+    //                 </p>
+    //                 <p className="text-sm text-gray-500 mt-1">
+    //                     Search by name, role or department
+    //                 </p>
+    //             </div>
+    //         </section>
+    //     )
+    // }
+
     // No results state
     if (results.length === 0) {
         return (
