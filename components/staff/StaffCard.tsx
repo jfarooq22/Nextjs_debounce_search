@@ -32,7 +32,8 @@ export function StaffCard({ member }: StaffCardProps) {
     return (
         <article
             aria-label={`${member.firstName} ${member.lastName}, ${member.role}`}
-            className="bg-white rounded-xl shadow-sm border border-gray-100 p-5 flex flex-col gap-4 hover:shadow-md transition-shadow duration-200"
+            className="rounded-xl border border-[#1e2d40] p-5 flex flex-col gap-4 hover:border-blue-500 transition-all duration-200"
+            style={{ backgroundColor: "#161b27" }}
         >
             {/* Header */}
             <div className="flex items-start justify-between gap-3">
@@ -47,10 +48,10 @@ export function StaffCard({ member }: StaffCardProps) {
 
                     {/* Name and role */}
                     <div>
-                        <h3 className="font-semibold text-gray-900 leading-tight">
+                        <h3 className="font-semibold text-white leading-tight">
                             {member.firstName} {member.lastName}
                         </h3>
-                        <p className="text-sm text-gray-500 mt-0.5">{member.role}</p>
+                        <p className="text-sm text-[#8892a4] mt-0.5">{member.role}</p>
                     </div>
                 </div>
 
@@ -64,10 +65,10 @@ export function StaffCard({ member }: StaffCardProps) {
             </div>
 
             {/* Department */}
-            <div className="flex items-center gap-2 text-sm text-gray-600">
+            <div className="flex items-center gap-2 text-sm text-[#8892a4]">
                 <svg
                     aria-hidden="true"
-                    className="w-4 h-4 text-gray-400 shrink-0"
+                    className="w-4 h-4 text-[#8892a4] shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -83,14 +84,14 @@ export function StaffCard({ member }: StaffCardProps) {
             </div>
 
             {/* Divider */}
-            <hr className="border-gray-100" />
+            <hr className="border-[#1e2d40]" />
 
         {/* Contact info */}
         <div className="flex flex-col gap-2">
             <a
                 href={`mailto:${member.email}`}
                 aria-label={`Email ${member.firstName} at ${member.email}`}
-                className="flex items-center gap-2 text-sm text-blue-600 hover:text-blue-800 hover:underline transition-colors"
+                className="flex items-center gap-2 text-sm text-blue-400 hover:text-blue-300 hover:underline transition-colors"
             >
                 <svg
                     aria-hidden="true"

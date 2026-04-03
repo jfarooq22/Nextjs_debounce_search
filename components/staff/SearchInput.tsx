@@ -16,7 +16,7 @@ export function SearchInput({ value, onChange, isLoading, resultCount }: SearchI
         <div className="relative w-full">
             <label
                 htmlFor="staff-search"
-                className="block text-sm font-medium text-gray-700 mb-1"
+                className="block text-sm font-medium text-[#8892a4] mb-1"
             >
                 Search Staff Directory
             </label>
@@ -33,7 +33,8 @@ export function SearchInput({ value, onChange, isLoading, resultCount }: SearchI
                     value={value}
                     onChange={(e) => onChange(e.target.value)}
                     placeholder="Search by name, role or department..."
-                    className="w-full px-4 py-3 pr-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
+                    className="w-full px-4 py-3 pr-10 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-[#8892a4] border border-[#1e2d40]"
+                    style={{ backgroundColor: "#161b27" }}
                 />
 
                 {isLoading && (
