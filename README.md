@@ -62,7 +62,7 @@ The brief mentioned mock data would be supplied. I reached out to confirm expect
 - **URL-based search state** — storing the search term in the URL (`/staff?search=nurse`) would make results shareable and support browser back/forward navigation
 - **Additional pages** — Patient Search and Dashboard are referenced in the nav, aligning with the broader CareView application structure from the Figma
 - **Pagination or virtual scrolling** — important for production where staff lists could be thousands of records
-- **End-to-end tests** with Playwright covering the full search flow
+
 
 ## Stack
 
