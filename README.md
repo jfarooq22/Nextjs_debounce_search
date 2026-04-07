@@ -1,6 +1,6 @@
 # ER CareView — Staff Directory
 
-A staff directory search feature built as part of the CareView technical assessment.
+A staff directory search feature 
 
 ## Getting Started
 ```bash
